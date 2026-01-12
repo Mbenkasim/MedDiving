@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservation - MEDDIVING</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="dark-theme">
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">MED<span class="text-primary">DIVING</span></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="reservation.html">Reservation</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Reservation Form Section -->
+    <section class="py-5 bg-dark">
+        <div class="container">
+            <h2 class="text-center text-white mb-5">Make a <span class="text-primary">Reservation</span></h2>
+            <div class="row justify-content-center">
+                <div class="col-md-8">
+                    <form class="card bg-darker text-white p-4">
+                        <div class="row mb-3">
+                            <div class="col-md-6">
+                                <label class="form-label">First Name</label>
+                                <input type="text" class="form-control" required>
+                            </div>
+                            <div class="col-md-6">
+                                <label class="form-label">Last Name</label>
+                                <input type="text" class="form-control" required>
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Email</label>
+                            <input type="email" class="form-control" required>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Phone Number</label>
+                            <input type="tel" class="form-control" required>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Service Type</label>
+                            <select class="form-control" required>
+                                <option value="">Select a Service</option>
+                                <option value="beginner-course">Beginner Diving Course</option>
+                                <option value="advanced-course">Advanced Diving Course</option>
+                                <option value="guided-tour">Guided Tour</option>
+                                <option value="equipment-rental">Equipment Rental</option>
+                            </select>
+                        </div>
+                        <div class="row mb-3">
+                            <div class="col-md-6">
+                                <label class="form-label">Preferred Date</label>
+                                <input type="date" class="form-control" required>
+                            </div>
+                            <div class="col-md-6">
+                                <label class="form-label">Number of People</label>
+                                <input type="number" class="form-control" min="1" required>
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Special Requirements</label>
+                            <textarea class="form-control" rows="3"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary w-100">Submit Reservation</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-darker text-white py-4">
+        <div class="container text-center">
+            <p>© 2024 MEDDIVING. All rights reserved For Mohamed Benkasim DEV101.</p>
+            <div class="social-links">
+                <a href="https://www.instagram.com/mohamed.mdbt/" class="text-white me-3"><i class="bi bi-instagram"></i></a>
+                <a href="https://www.facebook.com/mohamed.benkasim.94/" class="text-white me-3"><i class="bi bi-facebook"></i></a>
+                <a href="https://x.com/MBenkasim" class="text-white"><i class="bi bi-twitter"></i></a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
